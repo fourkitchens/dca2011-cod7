@@ -1,3 +1,6 @@
 [submodule "sites/all/modules/views"]
 	path = sites/all/modules/views
 	url = git://git.drupal.org/project/views.git
+[submodule "sites/all/modules/ctools"]
+	path = sites/all/modules/ctools
+	url = git://git.drupal.org/project/ctools.git
