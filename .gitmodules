@@ -4,3 +4,9 @@
 [submodule "sites/all/modules/ctools"]
 	path = sites/all/modules/ctools
 	url = git://git.drupal.org/project/ctools.git
+[submodule "sites/all/modules/token"]
+	path = sites/all/modules/token
+	url = git://git.drupal.org/project/token.git
+[submodule "sites/all/modules/pathauto"]
+	path = sites/all/modules/pathauto
+	url = git://git.drupal.org/project/pathauto.git
