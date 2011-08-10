@@ -1,0 +1,36 @@
+[submodule "sites/all/modules/views"]
+	path = sites/all/modules/views
+	url = git://git.drupal.org/project/views.git
+[submodule "sites/all/modules/ctools"]
+	path = sites/all/modules/ctools
+	url = git://git.drupal.org/project/ctools.git
+[submodule "sites/all/modules/pathauto"]
+	path = sites/all/modules/pathauto
+	url = git://git.drupal.org/project/pathauto.git
+[submodule "sites/all/modules/faq"]
+	path = sites/all/modules/faq
+	url = git://git.drupal.org/project/faq.git
+[submodule "sites/all/modules/markdown"]
+	path = sites/all/modules/markdown
+	url = git://git.drupal.org/project/markdown.git
+[submodule "sites/all/modules/features"]
+	path = sites/all/modules/features
+	url = git://git.drupal.org/project/features.git
+[submodule "sites/all/modules/token"]
+	path = sites/all/modules/token
+	url = git://git.drupal.org/project/token.git
+[submodule "sites/all/modules/context"]
+	path = sites/all/modules/context
+	url = git://git.drupal.org/project/context.git
+[submodule "sites/all/modules/panels"]
+	path = sites/all/modules/panels
+	url = git://git.drupal.org/project/panels.git
+[submodule "sites/all/modules/uuid"]
+	path = sites/all/modules/uuid
+	url = git://git.drupal.org/project/uuid.git
+[submodule "sites/all/modules/google_analytics"]
+	path = sites/all/modules/google_analytics
+	url = git://git.drupal.org/project/google_analytics.git
+[submodule "sites/all/modules/globalredirect"]
+	path = sites/all/modules/globalredirect
+	url = git://git.drupal.org/project/globalredirect.git
