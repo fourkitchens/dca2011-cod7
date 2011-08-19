@@ -7,43 +7,19 @@ description = Theme developed for the DrupalCamp Austin 2011
 
 
 ; This theme is compatible with Drupal 7 core.
+core = 7.x
 
-core        = 7.x
+; CSS declarations
 
+stylesheets[all][]        = css/styles.css
+sstylesheets[print][]     = css/print.css
 
-; This section adds CSS files to your theme. The media type is specified in
-; the brackets. Typical CSS media types include "all", "screen", "print", and
-; "handheld". See http://www.w3.org/TR/CSS21/media.html#media-types for a full
-; list of stylesheet media types in CSS 2.1.
-;
-; You can also override or remove any module's stylesheets, an extremely
-; useful feature. See the excellent Drupal 7 Theme Guide at
-; http://drupal.org/node/263967 for more details.
-
-stylesheets[all][]        = css/html-reset.css
-stylesheets[all][]        = css/wireframes.css
-stylesheets[all][]        = css/layout-fixed.css
-stylesheets[all][]        = css/page-backgrounds.css
-stylesheets[all][]        = css/tabs.css
-stylesheets[all][]        = css/pages.css
-stylesheets[all][]        = css/blocks.css
-stylesheets[all][]        = css/navigation.css
-stylesheets[all][]        = css/views-styles.css
-stylesheets[all][]        = css/nodes.css
-stylesheets[all][]        = css/comments.css
-stylesheets[all][]        = css/forms.css
-stylesheets[all][]        = css/fields.css
-stylesheets[print][]      = css/print.css
-
-; Example of adding handheld stylesheets. The iPhone's preferred media type
-; is based on the CSS3 Media queries. http://www.w3.org/TR/css3-mediaqueries/
+; MOBILE CSS
 
 ;stylesheets[handheld][]  = css/mobile.css
 ;stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
 
-; Add conditional stylesheets that are processed by IE. See the css/README.txt.
-
-; To target all versions of IE with an ie.css, uncomment the following line:
+; IE only
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 
 
@@ -66,12 +42,7 @@ regions[bottom]         = Page bottom
 regions[top]            = Page top
 
 
-; Various page elements output by the theme can be toggled on and off. The
-; "features" control which of these check boxes display on the
-; admin/appearance config page. This is useful for suppressing check boxes
-; for elements not used by your sub-theme. To suppress a check box, omit the
-; entry for it below. See the Drupal 7 Theme Guide for more info:
-; http://drupal.org/node/171205#features
+; Active Features
 
 features[] = logo
 features[] = name
@@ -81,8 +52,6 @@ features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
-
-
 
 ; Set the default values of settings on the theme-settings.php form.
 
