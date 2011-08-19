@@ -34,3 +34,9 @@
 [submodule "sites/all/modules/globalredirect"]
 	path = sites/all/modules/globalredirect
 	url = git://git.drupal.org/project/globalredirect.git
+[submodule "sites/all/modules/uuid_features"]
+	path = sites/all/modules/uuid_features
+	url = git://git.drupal.org/project/uuid_features.git
+[submodule "sites/all/modules/references"]
+	path = sites/all/modules/references
+	url = git://git.drupal.org/project/references.git

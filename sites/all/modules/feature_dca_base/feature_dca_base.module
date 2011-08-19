@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_dca_base feature.
+ */
+
+include_once('feature_dca_base.features.inc');
