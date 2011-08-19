@@ -25,7 +25,7 @@
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   
-  <script src="<?php $base_path . $directory ?>/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="<?php echo $base_path . $directory ?>/js/libs/modernizr-2.0.6.min.js"></script>
   
   <?php print $head; ?> 
 
