@@ -1,35 +1,27 @@
-; The name, description and screenshot used for this theme on the Appearance
-; page at admin/appearance.
-
+; The name, description and screenshot used for this theme on the Appearance page
 screenshot  = screenshot.png
 name        = Hipster
 description = Theme developed for the DrupalCamp Austin 2011
 
-
 ; This theme is compatible with Drupal 7 core.
 core = 7.x
 
+; Overrides
+stylesheets[all][]        = system.menus.css
+
 ; CSS declarations
-
 stylesheets[all][]        = css/styles.css
-sstylesheets[print][]     = css/print.css
-
-; MOBILE CSS
-
-;stylesheets[handheld][]  = css/mobile.css
-;stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
+stylesheets[all][]        = css/responsive.css
+stylesheets[print][]      = css/print.css
 
 ; IE only
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 
-
 ; Optionally add some JavaScripts to your theme.
-
+;scripts[] = js/plugins.js
 ;scripts[] = js/script.js
 
-
 ; regions in page.tpl.php template.
-
 regions[help]           = Help
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
@@ -41,9 +33,7 @@ regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[top]            = Page top
 
-
 ; Active Features
-
 features[] = logo
 features[] = name
 features[] = slogan

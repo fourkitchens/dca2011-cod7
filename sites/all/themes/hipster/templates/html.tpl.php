@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,target-densityDpi=device-dpi">
 
   <?php print $styles; ?>
  
@@ -29,15 +29,20 @@
   
   <?php print $head; ?> 
 
-</head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#<?php print $jump_link_target; ?>" class="element-invisible element-focusable"><?php print t('Jump to Navigation'); ?></a>
   </div>
-  <?php print $page_top; ?>
+  <?php print $top; ?>
   <?php print $page; ?>
-  <?php print $page_bottom; ?>
+  <?php print $bottom; ?>
   
   <?php print $scripts; ?>
+  
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
 </body>
 </html>
