@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Zen theme's implementation to display a single Drupal page.
+ * Basic page.tpl.php structure of a single Drupal page
  *
  * Available variables:
  *
@@ -62,16 +62,11 @@
  * - $page['footer']: Items for the footer region.
  * - $page['bottom']: Items to appear at the bottom of the page below the footer.
  *
- * @see template_preprocess()
- * @see template_preprocess_page()
- * @see zen_preprocess_page()
- * @see template_process()
  */
 ?>
+<div id="page">
 
-<div id="page-wrapper"><div id="page">
-
-  <div id="header"><div class="section clearfix">
+  <header><div class="section clearfix">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -112,11 +107,11 @@
 
     <?php print render($page['header']); ?>
 
-  </div></div><!-- /.section, /#header -->
+  </div></header><!-- /.section, /#header -->
 
-  <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
+  <section id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
 
-    <div id="content" class="column"><div class="section">
+    <article id="content" class="column">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -135,10 +130,10 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
-    </div></div><!-- /.section, /#content -->
+    </article><!-- /.section, /#content -->
 
     <?php if ($page['navigation'] || $main_menu): ?>
-      <div id="navigation"><div class="section clearfix">
+      <nav><div class="section clearfix">
 
         <?php print theme('links__system_main_menu', array(
           'links' => $main_menu,
@@ -155,17 +150,17 @@
 
         <?php print render($page['navigation']); ?>
 
-      </div></div><!-- /.section, /#navigation -->
+      </div></nav><!-- /.section, /#navigation -->
     <?php endif; ?>
 
     <?php print render($page['sidebar_first']); ?>
 
     <?php print render($page['sidebar_second']); ?>
 
-  </div></div><!-- /#main, /#main-wrapper -->
+  </div></section><!-- /#main, /#main-wrapper -->
 
-  <?php print render($page['footer']); ?>
+  <?php print '<footer>' . render($page['footer']) . '</footer>'; ?>
 
-</div></div><!-- /#page, /#page-wrapper -->
+</div><!-- /#page -->
 
 <?php print render($page['bottom']); ?>
