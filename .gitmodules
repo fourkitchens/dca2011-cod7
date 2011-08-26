@@ -40,3 +40,6 @@
 [submodule "sites/all/modules/references"]
 	path = sites/all/modules/references
 	url = git://git.drupal.org/project/references.git
+[submodule "sites/all/modules/cod_support"]
+	path = sites/all/modules/cod_support
+	url = http://git.drupal.org/project/cod_support.git
