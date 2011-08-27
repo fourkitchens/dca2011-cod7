@@ -5,7 +5,6 @@
  */
  
 ?><!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>> <!--<![endif]-->
@@ -26,7 +25,7 @@
   <![endif]-->
   
   <script src="<?php echo $base_path . $directory ?>/js/libs/modernizr-2.0.6.min.js"></script>
-  
+   
   <?php print $head; ?> 
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

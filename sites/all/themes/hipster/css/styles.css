@@ -85,13 +85,31 @@ body {
 
 /* ==|== typography ========================================================= */
 
+/* webfonts */
+.gloriola { font-family: gloriola-web,sans-serif; }
+.kulturista { font-family: kulturista-web,serif; }
+
+/*
+font-family: kulturista-web,serif;
+font-style: normal;
+font-weight: 600;
+*/
+
+
 a { color: #ed9310; text-decoration: none; }
 a:visited { color: #ed9310; }
 a:hover { color: #d24813; text-decoration: underline; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
 
-h1, h2, h3, h4, h5, h6 {}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+
+}
 
 h1 { font-size: 2.2em; }
 

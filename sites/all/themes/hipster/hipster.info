@@ -19,7 +19,7 @@ stylesheets[print][]      = css/print.css
 
 ; Optionally add some JavaScripts to your theme.
 ;scripts[] = js/plugins.js
-;scripts[] = js/script.js
+scripts[] = js/script.js
 
 ; regions in page.tpl.php template.
 regions[help]           = Help
