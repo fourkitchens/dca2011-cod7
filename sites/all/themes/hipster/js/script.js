@@ -1,6 +1,7 @@
-/* Author: 
+/* Four Kitchens
+ * ==|== author ==========================================================
+ */
 
-*/
 $(document).ready(function() {
   
   

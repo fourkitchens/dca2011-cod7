@@ -2,14 +2,12 @@
 screenshot  = screenshot.png
 name        = Hipster
 description = Theme developed for the DrupalCamp Austin 2011
-
-; This theme is compatible with Drupal 7 core.
 core = 7.x
 
 ; Overrides
 stylesheets[all][]        = system.menus.css
 
-; CSS declarations
+; CSS
 stylesheets[all][]        = css/styles.css
 stylesheets[all][]        = css/responsive.css
 stylesheets[print][]      = css/print.css
@@ -17,14 +15,13 @@ stylesheets[print][]      = css/print.css
 ; IE only
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 
-; Optionally add some JavaScripts to your theme.
+; JavaScript
 ;scripts[] = js/plugins.js
 scripts[] = js/script.js
 
-; regions in page.tpl.php template.
+; Regions
 regions[help]           = Help
-regions[sidebar_first]  = First sidebar
-regions[sidebar_second] = Second sidebar
+regions[sidebar]        = Sidebar
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[content]        = Content
@@ -32,6 +29,9 @@ regions[header]         = Header
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[top]            = Page top
+
+; Panels layouts
+plugins[panels][layouts] = panels_layouts
 
 ; Active Features
 features[] = logo
@@ -43,8 +43,7 @@ features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
-; Set the default values of settings on the theme-settings.php form.
-
+; Settings
 settings[hipster_breadcrumb]           = yes
 settings[hipster_breadcrumb_separator] = ' Ý '
 settings[hipster_breadcrumb_home]      = 1

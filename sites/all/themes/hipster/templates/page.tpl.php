@@ -56,8 +56,7 @@
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['highlighted']: Items for the highlighted content region.
  * - $page['content']: The main content of the current page.
- * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['sidebar_second']: Items for the second sidebar.
+ * - $page['sidebar']: Items for the sidebar.
  * - $page['header']: Items for the header region.
  * - $page['footer']: Items for the footer region.
  * - $page['bottom']: Items to appear at the bottom of the page below the footer.
