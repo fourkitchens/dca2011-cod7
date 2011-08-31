@@ -52,3 +52,6 @@
 [submodule "sites/all/modules/field_group"]
 	path = sites/all/modules/field_group
 	url = http://git.drupal.org/project/field_group.git
+[submodule "sites/all/modules/field_permissions"]
+	path = sites/all/modules/field_permissions
+	url = http://git.drupal.org/project/field_permissions.git
