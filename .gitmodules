@@ -43,3 +43,6 @@
 [submodule "sites/all/modules/cod_support"]
 	path = sites/all/modules/cod_support
 	url = http://git.drupal.org/project/cod_support.git
+[submodule "sites/all/modules/admin"]
+	path = sites/all/modules/admin
+	url = http://git.drupal.org/project/admin.git
