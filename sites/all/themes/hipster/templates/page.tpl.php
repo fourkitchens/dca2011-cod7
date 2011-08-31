@@ -123,7 +123,7 @@
 
 
   <section id="main-wrapper" class="container-12 clearfix">
-    <div id="main" class="clearfix<?php if ($main_menu]) { print ' with-navigation'; } ?>">
+    <div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
 
     <article id="content" class="column">
       <a id="main-content"></a>

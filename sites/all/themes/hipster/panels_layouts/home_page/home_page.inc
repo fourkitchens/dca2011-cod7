@@ -3,7 +3,7 @@
 // Plugin definition
 $plugin = array(
   'title' => t('Home Page panel'),
-  'category' => t('Custom'),
+  'category' => t('Drupal Camp'),
   'icon' => 'homepage.png',
   'theme' => 'panels_home',
   'regions' => array(
