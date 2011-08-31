@@ -49,3 +49,6 @@
 [submodule "sites/all/modules/date"]
 	path = sites/all/modules/date
 	url = http://git.drupal.org/project/date.git
+[submodule "sites/all/modules/field_group"]
+	path = sites/all/modules/field_group
+	url = http://git.drupal.org/project/field_group.git
