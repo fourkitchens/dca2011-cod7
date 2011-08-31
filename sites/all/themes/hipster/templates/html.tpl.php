@@ -25,16 +25,14 @@
   <![endif]-->
   
   <script src="<?php echo $base_path . $directory ?>/js/libs/modernizr-2.0.6.min.js"></script>
-   
+  <script src="<?php echo $base_path . $directory ?>/js/script.js"></script>
   <?php print $head; ?> 
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#<?php print $jump_link_target; ?>" class="element-invisible element-focusable"><?php print t('Jump to Navigation'); ?></a>
   </div>
-  <?php print $top; ?>
   <?php print $page; ?>
-  <?php print $bottom; ?>
   
   <?php print $scripts; ?>
   

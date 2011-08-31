@@ -1,7 +1,7 @@
-; The name, description and screenshot used for this theme on the Appearance page
-screenshot  = screenshot.png
 name        = Hipster
 description = Theme developed for the DrupalCamp Austin 2011
+screenshot  = images/screenshot.png
+
 core = 7.x
 
 ; Overrides
@@ -12,23 +12,19 @@ stylesheets[all][]        = css/styles.css
 stylesheets[all][]        = css/responsive.css
 stylesheets[print][]      = css/print.css
 
+
 ; IE only
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 
 ; JavaScript
 ;scripts[] = js/plugins.js
-scripts[] = js/script.js
+;scripts[] = js/script.js
 
 ; Regions
 regions[help]           = Help
-regions[sidebar]        = Sidebar
-regions[navigation]     = Navigation bar
-regions[highlighted]    = Highlighted
 regions[content]        = Content
 regions[header]         = Header
 regions[footer]         = Footer
-regions[bottom]         = Page bottom
-regions[top]            = Page top
 
 ; Panels layouts
 plugins[panels][layouts] = panels_layouts
@@ -40,18 +36,7 @@ features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = favicon
-features[] = main_menu
 features[] = secondary_menu
-
-; Settings
-settings[hipster_breadcrumb]           = yes
-settings[hipster_breadcrumb_separator] = ' Ý '
-settings[hipster_breadcrumb_home]      = 1
-settings[hipster_breadcrumb_trailing]  = 1
-settings[hipster_breadcrumb_title]     = 0
-settings[hipster_jump_link_target]     = main-menu
-settings[hipster_rebuild_registry]     = 1
-settings[hipster_wireframes]           = 0
 
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.

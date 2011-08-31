@@ -74,13 +74,23 @@ body {
   color: #ffffff;
 }
 
-.block { 
+header {}
+
+nav {}
+
+section {}
+
+footer {
+  background-color: #283946; 
+  border-top: 1px solid #4f5e68;
+}
+
+#main .block { 
   background-color: #283946; 
   border: 1px solid #4f5e68;
   padding: 10px 15px;
   margin-bottom: 20px;
   }
-
 
 
 /* ==|== typography ========================================================= */
@@ -95,7 +105,6 @@ font-style: normal;
 font-weight: 600;
 */
 
-
 a { color: #ed9310; text-decoration: none; }
 a:visited { color: #ed9310; }
 a:hover { color: #d24813; text-decoration: underline; }
@@ -108,12 +117,12 @@ h3,
 h4, 
 h5, 
 h6 {
-
+  font-family: gloriola-web,sans-serif;
 }
 
-h1 { font-size: 2.2em; }
+h1 { font-family: gloriola-web,sans-serif; font-size: 2.2em; }
 
-h2 {}
+h2 { font-family: gloriola-web,sans-serif; }
 
 h3 {}
 
@@ -133,6 +142,7 @@ ol {}
 
 dl {}
 
+/* ==|== buttons ========================================================= */
 
 
 /* ==|== non-semantic helper classes ======================================== */

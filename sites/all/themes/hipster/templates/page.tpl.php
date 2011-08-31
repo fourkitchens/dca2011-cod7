@@ -52,20 +52,11 @@
  *   in the page's path (e.g. node/12345 and node/12345/revisions, but not
  *   comment/reply/12345).
  *
- * Regions:
- * - $page['help']: Dynamic help text, mostly for admin pages.
- * - $page['highlighted']: Items for the highlighted content region.
- * - $page['content']: The main content of the current page.
- * - $page['sidebar']: Items for the sidebar.
- * - $page['header']: Items for the header region.
- * - $page['footer']: Items for the footer region.
- * - $page['bottom']: Items to appear at the bottom of the page below the footer.
- *
  */
 ?>
 <div id="page">
 
-  <header><div class="section clearfix">
+  <header class="container-12 clearfix">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -108,13 +99,33 @@
 
     <?php print render($page['header']); ?>
 
-  </div></header><!-- /.section, /#header -->
+  </header><!-- /#header -->
 
-  <section id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
+    <?php if ($page['navigation'] || $main_menu): ?>
+      <nav class="container-12 clearfix">
+
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu',
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+
+        <?php print render($page['navigation']); ?>
+      </nav><!-- /nav -->
+    <?php endif; ?>
+
+
+  <section id="main-wrapper" class="container-12 clearfix">
+    <div id="main" class="clearfix<?php if ($main_menu]) { print ' with-navigation'; } ?>">
 
     <article id="content" class="column">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
@@ -131,37 +142,10 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
-    </article><!-- /.section, /#content -->
-
-    <?php if ($page['navigation'] || $main_menu): ?>
-      <nav><div class="section clearfix">
-
-        <?php print theme('links__system_main_menu', array(
-          'links' => $main_menu,
-          'attributes' => array(
-            'id' => 'main-menu',
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-
-        <?php print render($page['navigation']); ?>
-
-      </div></nav><!-- /.section, /#navigation -->
-    <?php endif; ?>
-
-    <?php print render($page['sidebar_first']); ?>
-
-    <?php print render($page['sidebar_second']); ?>
+    </article><!-- /section, /#content -->
 
   </div></section><!-- /#main, /#main-wrapper -->
 
-  <?php print '<footer>' . render($page['footer']) . '</footer>'; ?>
+  <footer><div class="container-12 clearfix"><?php print render($page['footer']); ?></div></footer>
 
 </div><!-- /#page -->
-
-<?php print render($page['bottom']); ?>

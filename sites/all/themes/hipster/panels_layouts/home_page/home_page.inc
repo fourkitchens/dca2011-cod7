@@ -3,8 +3,8 @@
 // Plugin definition
 $plugin = array(
   'title' => t('Home Page panel'),
-  'category' => t('Columns: 2'),
-  'icon' => 'home_page.png',
+  'category' => t('Custom'),
+  'icon' => 'homepage.png',
   'theme' => 'panels_home',
   'regions' => array(
     'top' => t('Top area'),

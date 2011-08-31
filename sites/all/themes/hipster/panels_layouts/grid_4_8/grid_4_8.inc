@@ -4,7 +4,7 @@
 // Plugin definition
 $plugin = array(
   'title' => t('Grid: 4-8'),
-  'category' => t('Columns: 2'),
+  'category' => t('Custom'),
   'icon' => 'grid_4_8.png',
   'theme' => 'panels-grid-4-8',
   'panels' => array(
