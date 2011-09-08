@@ -58,3 +58,6 @@
 [submodule "sites/all/modules/strongarm"]
 	path = sites/all/modules/strongarm
 	url = http://git.drupal.org/project/strongarm.git
+[submodule "sites/all/modules/nodequeue"]
+	path = sites/all/modules/nodequeue
+	url = git://git.drupal.org/project/nodequeue.git
