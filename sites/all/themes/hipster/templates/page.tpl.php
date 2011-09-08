@@ -60,8 +60,7 @@
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <figure class="logo"><script type="text/javascript">document.write(getImageTag());</script>  
-  </figure></a>
+      <figure class="logo"><script>document.write(getImageTag());</script></figure></a>
     <?php endif; ?>
 
     <?php if ($site_name || $site_slogan): ?>
