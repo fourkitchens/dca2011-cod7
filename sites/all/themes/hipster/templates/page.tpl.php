@@ -84,6 +84,19 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+    
+    <?php print theme('links__system_navigation', array(
+          'links' => $navigtion,
+          'attributes' => array(
+            'id' => 'navigation',
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
 
   </header><!-- /#header -->
 

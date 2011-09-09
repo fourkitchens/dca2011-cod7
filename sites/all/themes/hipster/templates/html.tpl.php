@@ -37,6 +37,8 @@
 
   <?php print $page; ?>
   
+  <?php print $page_bottom; ?>  
+  
   <?php print $scripts; ?>
   
   <!--[if lt IE 7 ]>
