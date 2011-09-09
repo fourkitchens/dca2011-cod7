@@ -83,19 +83,6 @@
       </div><!-- /#name-and-slogan -->
     <?php endif; ?>
 
-    <?php print theme('links__system_secondary_menu', array(
-      'links' => $secondary_menu,
-      'attributes' => array(
-        'id' => 'secondary-menu',
-        'class' => array('links', 'inline', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => $secondary_menu_heading,
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    )); ?>
-
     <?php print render($page['header']); ?>
 
   </header><!-- /#header -->

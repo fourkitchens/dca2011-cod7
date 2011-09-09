@@ -1,7 +1,6 @@
 name        = Hipster
 description = Theme developed for the DrupalCamp Austin 2011
 screenshot  = images/screenshot.png
-
 core = 7.x
 
 ; Overrides
@@ -17,7 +16,6 @@ stylesheets[print][]      = css/print.css
 ;stylesheets-conditional[IE][all][]       = css/ie.css
 
 ; JavaScript
-;scripts[] = js/plugins.js
 ;scripts[] = js/script.js
 
 ; Regions
@@ -25,6 +23,8 @@ regions[help]           = Help
 regions[content]        = Content
 regions[header]         = Header
 regions[footer]         = Footer
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
 
 ; Panels layouts
 plugins[panels][layouts] = panels_layouts
